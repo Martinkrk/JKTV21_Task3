@@ -35,19 +35,20 @@ public class JKTV21Task3Gerstman {
         
         year = personalCode.substring(1,3);
         month = personalCode.substring(3,5);
+        String m = months[Integer.parseInt(month)-1];
         day = personalCode.substring(5,7);
         
         if((personalCode.charAt(0) + "").contains("3")){
-            System.out.println(name + " " + lastname + " родился " + day + " " + months[Integer.parseInt(month)-1] + " 19" + year + " года");
+            System.out.printf("%s %s родился %s %s 19%s года", name, lastname, day, m, year);
         }
         else if((personalCode.charAt(0) + "").contains("5")){
-            System.out.println(name + " " + lastname + " родился " + day + " " + months[Integer.parseInt(month)-1] + " 20" + year + " года");
+            System.out.printf("%s %s родился %s %s 20%s года", name, lastname, day, m, year);
         }
         else if((personalCode.charAt(0) + "").contains("4")){
-            System.out.println(name + " " + lastname + " родилась " + day + " " + months[Integer.parseInt(month)-1] + " 19" + year + " года");
+            System.out.printf("%s %s родилась %s %s 19%s года", name, lastname, day, m, year);
         }
         else if((personalCode.charAt(0) + "").contains("6")){
-            System.out.println(name + " " + lastname + " родилась " + day + " " + months[Integer.parseInt(month)-1] + " 20" + year + " года");
+            System.out.printf("%s %s родилась %s %s 20%s года", name, lastname, day, m, year);
         }
     }
     
